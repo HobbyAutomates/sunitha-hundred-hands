@@ -1,0 +1,283 @@
+<!doctype html><html lang="en"><head><title>SVAM Film Brief</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta property="og:title" content="Svam Film Brief">
+<meta property="og:description" content="Tell us how the Svam, Nandi Hills film should feel. 67 quick questions.">
+<meta property="og:image" content="https://sunitha-hundred-hands.vercel.app/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#EEE9E0; --surface:#F7F4EE; --ink:#1C1A17; --muted:#6B655B; --line:#D6CEC0;
+  --accent:#6E5F35; --accent-ink:#F3EFE6; --chip:#E4DED2; --chip-on:#1C1A17; --chip-on-ink:#F3EFE6; --ok:#4E6B4A;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#151412; --surface:#1E1C19; --ink:#EDE7DB; --muted:#A39B8D; --line:#3A362F;
+    --accent:#C9B478; --accent-ink:#151412; --chip:#2A2724; --chip-on:#EDE7DB; --chip-on-ink:#151412; --ok:#9DBB92;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#151412; --surface:#1E1C19; --ink:#EDE7DB; --muted:#A39B8D; --line:#3A362F;
+  --accent:#C9B478; --accent-ink:#151412; --chip:#2A2724; --chip-on:#EDE7DB; --chip-on-ink:#151412; --ok:#9DBB92;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:Karla,"Helvetica Neue",Arial,sans-serif;font-size:16px;line-height:1.55}
+.wrap{max-width:720px;margin:0 auto;padding:48px 20px 96px}
+header{padding-bottom:36px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.brand{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;letter-spacing:.42em;font-size:22px;text-transform:uppercase;margin:0 0 20px}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:400;font-size:44px;line-height:1.08;margin:0 0 14px;text-wrap:balance}
+.lede{color:var(--muted);max-width:56ch;margin:0}
+.lede b{color:var(--ink);font-weight:600}
+.progress{position:sticky;top:0;z-index:5;background:var(--ground);padding:10px 0;display:flex;align-items:center;gap:12px;font-size:13px;color:var(--muted);border-bottom:1px solid var(--line)}
+.bar{flex:1;height:2px;background:var(--line);position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);width:0;transition:width .25s}
+section{padding:40px 0 8px}
+.sec-label{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 6px}
+h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:30px;margin:0 0 6px}
+.why{color:var(--muted);font-size:15px;margin:0 0 28px;max-width:58ch}
+.q{display:grid;grid-template-columns:34px 1fr;gap:0 10px;padding:18px 0;border-top:1px solid var(--line)}
+.q .n{font-family:"Cormorant Garamond",Georgia,serif;font-size:20px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.q label.t{display:block;font-weight:500;margin-bottom:10px}
+.hint{display:block;color:var(--muted);font-size:14px;font-weight:400;margin-top:2px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{background:var(--chip);border:1px solid transparent;border-radius:999px;padding:7px 14px;font-size:14px;cursor:pointer;user-select:none}
+.chips input{position:absolute;opacity:0;width:0;height:0}
+.chips input:checked+span{}
+.chips label:has(input:checked){background:var(--chip-on);color:var(--chip-on-ink)}
+.chips label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+textarea,input[type=text]{width:100%;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:10px 12px;font:inherit;font-size:15px}
+textarea{min-height:64px;resize:vertical}
+textarea:focus,input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.scale label{text-align:center;background:var(--chip);border-radius:6px;padding:9px 4px;font-size:13px;cursor:pointer}
+.scale label:has(input:checked){background:var(--chip-on);color:var(--chip-on-ink)}
+.scale input{position:absolute;opacity:0;width:0;height:0}
+.scale .end{grid-column:1/-1;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+footer{margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}
+.who{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+@media(max-width:520px){.who{grid-template-columns:1fr}h1{font-size:36px}}
+button{font:inherit;font-weight:600;background:var(--accent);color:var(--accent-ink);border:0;border-radius:999px;padding:14px 28px;cursor:pointer;font-size:16px}
+button:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+button[disabled]{opacity:.5;cursor:default}
+.status{margin-top:14px;font-size:14px;color:var(--muted);min-height:20px}
+.status.ok{color:var(--ok)}
+.note{font-size:13px;color:var(--muted);margin-top:24px}
+.done{display:none;padding:60px 0;text-align:center}
+.done h2{font-size:38px}
+</style></head><body>
+<div class="wrap">
+<header>
+  <p class="brand">Svam</p>
+  <h1>Before we shoot the film, tell us how you want it to feel.</h1>
+  <p class="lede">A short set of questions for the <b>Svam, Nandi Hills</b> sneak-peek film. Sixty-seven questions in eight parts, most of them a single tap. Skip anything you are unsure about. Your answers decide the brightness, the music, which projects we lead with, and how the builder and architect share the frame.</p>
+</header>
+
+<div class="progress"><span id="pcount">0 of 67 answered</span><div class="bar"><i id="pbar"></i></div></div>
+
+<form id="brief" autocomplete="off">
+
+<section>
+<p class="sec-label">Part A</p><h2>The project in one breath</h2>
+<p class="why">So the film says the right thing about the right place.</p>
+<div id="A"></div>
+</section>
+
+<section>
+<p class="sec-label">Part B</p><h2>Where and when it will be shown</h2>
+<p class="why">A film shown in a lit banquet hall at night needs a very different brightness and contrast from one played on a phone in daylight or a sales-office TV. This is the single most important section for the grade.</p>
+<div id="B"></div>
+</section>
+
+<section>
+<p class="sec-label">Part C</p><h2>Music and mood</h2>
+<p class="why">Peppy and rhythmic for a crowd that wants energy, or restrained instrumental for a more reserved audience. The music sets the pace of every cut.</p>
+<div id="C"></div>
+</section>
+
+<section>
+<p class="sec-label">Part D</p><h2>Voice and words</h2>
+<p class="why">Whether the film should speak, and how.</p>
+<div id="D"></div>
+</section>
+
+<section>
+<p class="sec-label">Part E</p><h2>Your best pictures and best projects</h2>
+<p class="why">We have around 75 photographs and 6 walkthrough videos. Tell us which ones you are proudest of so the film leads with them.</p>
+<div id="E"></div>
+</section>
+
+<section>
+<p class="sec-label">Part F</p><h2>Architectural elements to feature</h2>
+<p class="why">The details that make Svam recognisably Svam. Tick what you want in, cross out what you want left out.</p>
+<div id="F"></div>
+</section>
+
+<section>
+<p class="sec-label">Part G</p><h2>Builder and architect, together</h2>
+<p class="why">This is a partnership film. How the two names sit on screen matters.</p>
+<div id="G"></div>
+</section>
+
+<section>
+<p class="sec-label">Part H</p><h2>Practical</h2>
+<div id="H"></div>
+</section>
+
+<footer>
+  <div class="who">
+    <input type="text" name="your_name" placeholder="Your name">
+    <input type="text" name="your_role" placeholder="Your role (builder / architect / marketing)">
+  </div>
+  <button type="submit" id="send">Send answers</button>
+  <div class="status" id="status"></div>
+  <p class="note">Answers go straight to the SohumAI team. If saving is not available on your device, the button will copy your answers so you can paste them into WhatsApp.</p>
+</footer>
+</form>
+
+<div class="done" id="done">
+  <p class="brand">Svam</p>
+  <h2>Thank you.</h2>
+  <p class="lede" style="margin:0 auto">Your answers are with us. We will come back with a revised cut built around them.</p>
+</div>
+</div>
+
+<script>
+const Q = {
+A:[
+ ["What is the official name of the project as it should appear on screen?","text","e.g. Svam, Svam Aamaya, Svam Neelam. Spell it exactly."],
+ ["Is Svam a single project or a family of sub-projects?","one",["One project","A family (Svam, Aamaya, Neelam...)","Not decided yet"]],
+ ["What is being sold or offered?","many",["Villa plots","Built villas","Clubhouse membership","Weekend homes","Farm plots","Investment","Other"]],
+ ["Who is this film mainly for?","many",["HNI families in Bengaluru","IT professionals","NRIs","Investors","Channel partners and brokers","Existing owners","Press and awards"]],
+ ["In one line, what should a viewer feel after 30 seconds?","text"],
+ ["What is the single fact you want remembered?","text","e.g. 30 minutes from the airport, 100 hands built it, every plot faces a boulder."],
+ ["Is there a tagline that must appear?","text","We used Living by Design from the brand deck. Keep, change or remove?"],
+ ["What should the film never say or show?","text","e.g. no prices, no plot counts, no construction, no people."],
+],
+B:[
+ ["Where will the film be played first?","many",["Launch event on a big screen","Sales office TV","Instagram and Facebook","WhatsApp to leads","Website","YouTube pre-roll","Broker presentations","Hoarding LED screen"]],
+ ["At the main showing, what time of day is it?","one",["Morning","Afternoon","Evening","Night","Any time, online only"]],
+ ["Is the main showing indoors or outdoors?","one",["Indoors, lights on","Indoors, lights dimmed","Outdoors in daylight","Outdoors after dark","Online only"]],
+ ["If indoors, what kind of screen?","one",["Projector","LED wall","Large TV","Laptop or phone","Not sure"]],
+ ["How bright is the room usually?","scale",["Very dark","Very bright"]],
+ ["How far will most viewers sit from the screen?","one",["Phone in hand","Across a table","Across a room","Across a hall"]],
+ ["Will people hear the audio?","one",["Yes, good speakers","Yes, but small speakers","Mostly muted (social media)","Mixed"]],
+ ["Which formats do you need?","many",["16:9 landscape","9:16 vertical for Reels","1:1 square","4:5 feed post","All of them"]],
+ ["Do you want burnt-in subtitles for muted playback?","one",["Yes always","Only on the vertical version","No"]],
+ ["Preferred overall brightness of the look?","one",["Bright and airy","Balanced","Moody and dark","Let you decide from the venue answers"]],
+],
+C:[
+ ["What energy should the music have?","one",["Peppy and rhythmic","Warm and uplifting","Calm and elegant instrumental","Cinematic and epic","Silence with ambient sound only"]],
+ ["Which instruments feel right for Svam?","many",["Piano","Strings","Acoustic guitar","Flute or bansuri","Sitar or veena","Soft electronic","Percussion and drums","Vocals or humming"]],
+ ["Should the music feel Indian, international, or a blend?","one",["Indian classical touch","International cinematic","A blend","No preference"]],
+ ["Pace of the cuts?","scale",["Slow, long shots","Fast, many shots"]],
+ ["Give one or two reference tracks or films you like the sound of.","text","Song names, YouTube links, anything."],
+ ["Give one reference you dislike, so we avoid it.","text"],
+ ["How loud should the music sit against the voice?","one",["Music leads, voice light","Balanced","Voice leads, music under"]],
+ ["Should the film end on a beat drop or a soft fade?","one",["A held final chord","A soft fade","A clean stop on the logo"]],
+ ["Any sound design you want to hear?","many",["Birdsong","Wind through trees","Water","Footsteps on stone","Distant temple bells","None, music only"]],
+],
+D:[
+ ["Do you want a voiceover at all?","one",["Yes","No, text on screen only","No, music only"]],
+ ["If yes, what kind of voice?","one",["Deep male, calm","Warm female, calm","Young and upbeat","Older, storyteller","No preference"]],
+ ["Accent?","one",["Neutral Indian English","British","American","Kannada","Hindi","Bilingual"]],
+ ["Tone of the writing?","one",["Poetic and quiet","Confident and premium","Friendly and direct","Factual"]],
+ ["Should the voice mention the builder and architect by name?","one",["Yes both","Builder only","Architect only","Neither, logos only"]],
+ ["Any phrases, words or lines that must be included?","text"],
+ ["Any words to avoid?","text","e.g. luxury, gated, investment."],
+ ["Should the film close with a call to action?","one",["Coming soon","Register your interest","Visit us","Phone number on screen","No call to action"]],
+],
+E:[
+ ["From the photographs sent, which 5 are your absolute favourites?","text","Describe them, e.g. the wave-roof pool at dusk, the brick jaali interior, the gazebo on the boulders."],
+ ["Which photographs should not be used?","text"],
+ ["Which of the 6 walkthrough videos is the best one?","text","Describe by what it shows."],
+ ["Which building is the hero of this film?","one",["The clubhouse with the pool and wave roof","The brick and concrete pavilion","The thatched gazebo on the rocks","The landscape and boulders","The villas","Let you decide"]],
+ ["Rank these settings by importance.","text","Boulders and hills, pool, clubhouse interior, pathways, pond, gazebo, villas, entrance."],
+ ["Should the film show only completed work, or renders too?","one",["Completed only","Renders allowed for unbuilt phases","Mix, clearly not labelled","Mix, labelled as artist impression"]],
+ ["Which of the builder's other projects are the best, and can we reference them?","text","Names and links. Say if they are off limits."],
+ ["Which of the architect's other projects are the best?","text"],
+ ["Do you have drone footage, or should we create aerial moves from stills?","one",["We have drone footage","Create it","No aerials"]],
+ ["Can we generate short AI camera moves from your photographs?","one",["Yes, freely","Yes, but the building must not change","Only real footage"]],
+],
+F:[
+ ["Which materials should the camera linger on?","many",["Exposed brick","Concrete","Granite boulders","Timber","Thatch","Stone paving","Water","Glass"]],
+ ["Which built elements must appear?","many",["Brick jaali screen","Wave-form roof","Slender steel columns","Cantilevered gazebo","Stone pathways","Lily pond","Infinity pool edge","Green roof","Sculptural metal tree"]],
+ ["Which landscape elements must appear?","many",["Rock outcrops","Nandi Hills skyline","Stepped lawns","Frangipani and native planting","Rock-ringed pond","Swing under the tree","Sunrise or sunset light"]],
+ ["What is the architectural idea in one sentence?","text","e.g. building between the boulders without moving them."],
+ ["Should the film explain the design, or just show it?","one",["Show only","One or two lines of explanation","A proper narrated explanation"]],
+ ["Which light suits the architecture best?","one",["Early morning","Harsh midday","Golden hour","Blue hour with interior lights on","A mix through the day"]],
+ ["Do you want people in the frames?","one",["No people","A single figure for scale","A family, lived-in","Guests at the pool and club"]],
+ ["Should the interiors appear?","one",["Yes, prominently","Briefly","Not yet"]],
+ ["Any sustainability or climate points to feature?","many",["Passive cooling","Rainwater","Local brick and stone","Native planting","Solar","None"]],
+ ["Any elements you would rather hide?","text","e.g. unfinished roads, temporary structures, neighbouring buildings."],
+ ["How much text on screen?","one",["None, logo only","Location and tagline only","Short captions per scene","Facts and numbers"]],
+ ["Typeface direction for on-screen text?","one",["Thin serif, like the Svam wordmark","Clean sans-serif","Match the brand deck exactly","Let you decide"]],
+],
+G:[
+ ["Exact builder name and logo to credit?","text","Send the logo file separately if we do not have it."],
+ ["Exact architect name and logo to credit?","text"],
+ ["How should the two names appear?","one",["Side by side, equal","Builder first","Architect first","Only Svam, partners at the end"]],
+ ["Where should the credits sit?","one",["Opening","Closing","Both"]],
+ ["Any third partner to credit?","text","Landscape, interiors, photographer, structural."],
+ ["Is there a line about the partnership you would like said or shown?","text","e.g. Built by Hundredhands, designed with..."],
+],
+H:[
+ ["When is the first showing?","text","Date and occasion."],
+ ["How many rounds of changes do you expect?","one",["One","Two","Three","As many as needed"]],
+ ["Who signs off the final cut?","text","Name and WhatsApp number."],
+ ["Anything else we should know?","text"],
+],
+};
+
+let n=0; const form=document.getElementById('brief');
+for(const [sec,list] of Object.entries(Q)){
+  const host=document.getElementById(sec);
+  list.forEach(([t,type,opts])=>{
+    n++; const id='q'+n; const d=document.createElement('div'); d.className='q';
+    let html=`<div class="n">${n}</div><div><label class="t" for="${id}">${t}${(type==='text'&&opts)?`<span class="hint">${opts}</span>`:''}</label>`;
+    if(type==='text') html+=`<textarea id="${id}" name="${id}" rows="2"></textarea>`;
+    else if(type==='one'||type==='many'){
+      html+='<div class="chips">'+opts.map((o,i)=>`<label><input type="${type==='one'?'radio':'checkbox'}" name="${id}" value="${o}"><span>${o}</span></label>`).join('')+'</div>';
+    } else if(type==='scale'){
+      html+='<div class="scale">'+[1,2,3,4,5].map(v=>`<label><input type="radio" name="${id}" value="${v}">${v}</label>`).join('')+`<div class="end"><span>${opts[0]}</span><span>${opts[1]}</span></div></div>`;
+    }
+    d.innerHTML=html+'</div>'; host.appendChild(d);
+    d.dataset.q=t;
+  });
+}
+const total=n;
+function collect(){
+  const out={}; const fd=new FormData(form);
+  document.querySelectorAll('.q').forEach((d,i)=>{
+    const id='q'+(i+1); const vals=fd.getAll(id).map(v=>String(v).trim()).filter(Boolean);
+    if(vals.length) out[id]={question:d.dataset.q,answer:vals.length>1?vals:vals[0]};
+  });
+  return out;
+}
+function progress(){
+  const c=Object.keys(collect()).length;
+  document.getElementById('pcount').textContent=`${c} of ${total} answered`;
+  document.getElementById('pbar').style.width=(100*c/total)+'%';
+}
+form.addEventListener('input',progress); form.addEventListener('change',progress);
+
+form.addEventListener('submit', async e=>{
+  e.preventDefault();
+  const btn=document.getElementById('send'), st=document.getElementById('status');
+  btn.disabled=true; st.className='status'; st.textContent='Saving...';
+  const answers=collect();
+  const doc={ submittedAt:new Date().toISOString(), name:form.your_name.value.trim(), role:form.your_role.value.trim(), answered:Object.keys(answers).length, answers };
+  try{
+    const r=await fetch('/api/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(doc)});
+    if(r.ok){ form.style.display='none'; document.getElementById('done').style.display='block'; window.scrollTo(0,0); return; }
+    st.textContent='Could not save here. Copying your answers instead.';
+  }catch(err){ st.textContent='Could not save here. Copying your answers instead.'; }
+  const txt=['SVAM film brief', doc.name+' ('+doc.role+')', '']
+    .concat(Object.values(answers).map((a,i)=>`${Object.keys(answers)[i].slice(1)}. ${a.question}\n   ${Array.isArray(a.answer)?a.answer.join(', '):a.answer}`)).join('\n');
+  try{ await navigator.clipboard.writeText(txt); st.className='status ok'; st.textContent='Answers copied. Paste them into WhatsApp to SohumAI.'; }
+  catch{ st.textContent='Select all and copy this: '; const ta=document.createElement('textarea'); ta.value=txt; ta.rows=12; st.appendChild(ta); }
+  btn.disabled=false;
+});
+</script>
+</body></html>
